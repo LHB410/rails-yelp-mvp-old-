@@ -12,6 +12,8 @@
 @import "components/index";
 @import "pages/index";
 
+
+
 .content-container {
   width: 80vw;
   margin: 0 auto;
@@ -36,4 +38,11 @@
   .content-container {
     width: 300px;
   }
+}
+
+#list {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+  padding: 8px;
+  max-height: fit-content;
 }
