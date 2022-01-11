@@ -1,0 +1,17 @@
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3270&q=80);">
+  <div class="container">
+    <h1>Yelp MVP reviews <strong>the best</strong> restaurants <strong>just for you </strong>!</h1>
+    <p>Make sure you know your food will be great before leaving home.</p>
+  </div>
+</div>
+<% @restaurants.each do |restaurant|  %>
+  <div class="card-pick">
+    <img src="image.jpg" alt="">
+    <div class="card-pick-info">
+        <%=restaurant.name %>
+        <%= restaurant.address %>
+        <%= restaurant.category %>
+        <%= link_to "More..", restaurant_path(restaurant)  %>
+      <% end %>
+    </div>
+  </div>

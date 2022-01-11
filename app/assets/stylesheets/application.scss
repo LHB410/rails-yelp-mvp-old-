@@ -1,0 +1,39 @@
+// Graphical variables
+@import "config/fonts";
+@import "config/colors";
+@import "config/bootstrap_variables";
+
+// External libraries
+@import "bootstrap/scss/bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+// Your CSS partials
+@import "components/index";
+@import "pages/index";
+
+.content-container {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (max-width: 992px) {
+  .content-container {
+    width: 700px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (max-width: 768px) {
+  .content-container {
+    width: 600px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (max-width: 576px) {
+  .content-container {
+    width: 300px;
+  }
+}
